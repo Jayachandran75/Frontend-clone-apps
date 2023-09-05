@@ -1,0 +1,327 @@
+body {
+    margin-bottom: 1000px;
+    padding-top:75px;
+    padding-left:110px;
+    background-color: rgb(248, 248, 248);
+}
+
+/** are bellow are header porsition css code **/
+
+.head-section {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid black;
+    position: fixed;
+    height: 75px;
+    top:0;
+    left:0;
+    right:0;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+
+/** are bellow are youtube logo and menu bar css code **/
+
+.youtubelogo-hamburgermeu {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    margin-left: 15px;
+
+}
+
+.burgermenu, .youtubelogo {
+    display: inline-block;
+    
+}
+
+
+.burgermenu-img {
+    width:30px;
+    height:25;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.youtubelogo-img {
+    width: 100px;
+    
+}
+
+/** are bellow are searchbar and voice bar css code **/
+
+.searchbar-mic {
+     width: 500px;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     align-items: stretch;
+}
+
+.searchbar,.searchicon,.mick {
+    display: inline-block;
+}
+
+.searchicon {
+    position: relative;
+}
+
+.fly {
+    position:absolute;
+    bottom: -44px;
+    background-color:rgb(91,91,91);
+    color:rgb(255, 255, 255);
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 6px;
+    padding-right: 6px;
+    opacity: 0;
+    pointer-events:None;
+    border-radius: 5px;
+}
+
+
+.mick {
+    width:50px;
+    margin-left:18px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.mick:hover .mickfly{
+    opacity: 1;
+}
+
+.mick-img:hover {
+    background-color:rgb(177, 177, 177);
+    cursor: pointer;
+}
+
+.mickfly {
+    position:absolute;
+    width:150px;
+    left: -20px;
+    bottom:-40px;
+    background-color:rgb(91,91,91);
+    color:rgb(255, 255, 255);
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 6px;
+    padding-right: 6px;
+    opacity: 0;
+    pointer-events:None;
+    border-radius: 5px;
+}
+
+.searchicon {
+    border:solid;
+    border-width: 0.1px;
+    border-color:black;
+    margin-left: -1px;
+    width:60px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.searchicon:hover .fly {
+    opacity: 1;
+}
+
+.search-input {
+    width:350px;
+    height: 38px;
+}
+
+.searchicon-img {
+    width: 30px;
+} 
+
+.mick-img {
+    width:35px;
+    background-color: rgb(238, 238, 238);
+    border-radius: 17px;
+}
+
+.burgermenu-img:hover, .youtubelogo-img, .signin-picture-img, .bell-img, .kolam-img, .movieicon-img  {
+    cursor: pointer;
+}
+
+
+/** are bellow are signin and signup bar css **/
+.signin-bar {
+    display: flexbox;
+    align-items: center;
+    flex-shrink:0; /*to prevent the flex box content form shrink */
+}
+
+
+.movieicon, .kolam, .bell, .signin-picture {
+    display: inline-block;
+}
+
+.movieicon-img,.kolam-img,.bell-img {
+    width: 30px;
+    margin-left: 15px;
+}
+
+.signin-picture-img {
+    width:30px;
+    margin-left: 20px;
+    margin-right: 10px;
+    border-radius: 15px;
+}
+
+.movieicon, .kolam, .bell {
+    position: relative;
+}
+
+.movieicon:hover .moviefly,.kolam:hover .kolamfly, .bell:hover .notificationfly {
+    opacity: 1;
+}
+
+.moviefly, .notificationfly {
+    position:absolute;
+    bottom: -44px;
+    background-color:rgb(91,91,91);
+    color:rgb(255, 255, 255);
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 6px;
+    padding-right: 6px;
+    opacity: 0;
+    pointer-events:None;
+    border-radius: 5px;
+}
+
+.kolamfly {
+    position:absolute;
+    width:93px;
+    left: -20px;
+    bottom:-40px;
+    background-color:rgb(91,91,91);
+    color:rgb(255, 255, 255);
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 6px;
+    padding-right: 6px;
+    opacity: 0;
+    pointer-events:None;
+    border-radius: 5px;
+}
+
+/*creating a side static bar */
+
+.sidebarfixed {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top:75px;
+    left:0;
+    bottom:0;
+    width:85px;
+    align-items:center;
+    background-color: white;
+}
+
+
+
+.side-compass, .side-subscription, .side-yourvideos, .side-library, .side-home {
+    width: 85px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.side-compass:hover, .side-subscription:hover, .side-yourvideos:hover, .side-library:hover, .side-home:hover, .side-youtubemusic:hover {
+    cursor: pointer;
+    background-color: rgb(212, 212, 212);
+}
+
+.side-compass, .side-subscription, .side-yourvideos, .side-library, .side-home {
+    margin-top: 15px;
+}
+
+.side-home {
+    margin-top: 10px;
+
+}
+
+
+.side-youtubemusic {
+    margin-top: 15px;
+    width: 85px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.side-compassicon, .side-subsriptionicon, .side-yourvideoicon, .side-youtubemusicicon, .side-libraryicon, .side-homeicon {
+    width: 30px;
+    object-fit: contain;
+}
+
+.side-secondtext, .side-firsttext, .side-thirdtext, .side-forthtext, .side-fifthtext, .side-sixthtext {
+    font-size: 12px;
+    font-style: Arial;
+}
+
+
+
+/* video content css code are bellow  */
+
+.gridbox {
+    display: grid;
+    grid-template-columns: 420px 420px 420px;
+    column-gap: 15px;
+    row-gap: 20px;
+}
+
+.imagetemplateicon {
+    width:418px;
+}
+
+.contentbox {
+    display: grid;
+    grid-template-columns: 50px 369px;
+    
+}
+
+.profilepicbox, .thumbnailbox {
+    height: 90px;
+    padding-top: 6px;
+}
+
+.profilepicicon {
+    margin-left: 6px;
+    width:35px;
+    border-radius: 17.5px;
+}
+
+.thumbnailcontentbox, .channelnamebox, .viewanddatebox {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.contentext , .contentchanell , .contentview {
+    margin: 0px;
+    font-style: Arial;
+}
+
+.channelnamebox {
+    padding-top: 10px;
+}
+
+.contentchanell , .contentview {
+    font-size: 14px;
+    color: rgb(76, 75, 75);
+}
+
+.contentext {
+    font-weight: bold;
+}
